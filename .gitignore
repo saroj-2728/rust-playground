@@ -1,0 +1,32 @@
+# Ignore target directories (build output)
+target/
+
+# Ignore Cargo.lock for libraries (keep it for binaries)
+**/Cargo.lock
+
+# Ignore generated debug symbols
+**/*.pdb
+
+# Ignore editor/IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# Ignore binaries and artifacts
+**/*.exe
+**/*.out
+**/*.dSYM/
+**/*.so
+**/*.dll
+**/*.dylib
+
+# Ignore compiled C bindings (if using FFI)
+*.o
+*.a
+*.lo
+*.la
+*.lib
+
+# Ignore logs and debug files
+*.log
+debug.log
