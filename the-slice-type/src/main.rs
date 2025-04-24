@@ -7,7 +7,7 @@ fn main() {
 
 
     let _len = str1.len();
-    let hello = &str1[0..5]; // .. = rust's range syntax
+    let _hello = &str1[0..5]; // .. = rust's range syntax
     // let hello = &str1[..5]; // valid, first value can be omitted if 0
     let world = &str1[6..11];  // world is a slice that contains a pointer to the byte at index 6 of str1 witha a length value of 5
     // let world = &str1[6..]; // is eq. to let world = &str1[6.._len] // if last value omitted, then upto the last index
