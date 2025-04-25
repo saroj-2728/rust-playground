@@ -93,7 +93,7 @@ fn main() {
         if rect1.can_hold(&rect3) { String::from("Yes") } else { String::from("No") }
     );
 
-    let sq = Rectangle::square(2);    // Calling a constructor, similar to String::from("Something")
+    let _sq = Rectangle::square(2);    // Calling a constructor, similar to String::from("Something")
     // :: syntax used for associated fns and namespaces created by modules
 
 
