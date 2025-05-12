@@ -3,9 +3,10 @@
 
 #[derive(Debug)]
 struct Point2D<T> {
-    // generics with struct, only allows both x and y to be of same type
+    // generics with struct,
     x: T,
     y: T,
+    // here only allows both x and y to be of same type
 }
 
 #[derive(Debug)]
@@ -44,7 +45,10 @@ fn main() {
     println!("Coordinates of origin: {:#?}", origin);
     println!("Origin x: {}", origin.x);
     println!("Coordinates of other point: {:#?}", some_random_point);
-    println!("Distance from origin: {}", some_random_point.distance_from_origin());
+    println!(
+        "Distance from origin: {}",
+        some_random_point.distance_from_origin()
+    );
     println!();
 
     let a_3D_point = Point3D {
